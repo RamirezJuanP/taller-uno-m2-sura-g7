@@ -64,3 +64,23 @@ historial.pop();
 console.log(historial)
 
 
+// EJERCICIO 4
+
+/*
+Ejercicio 4: Cola de Impresión (FIFO)
+Inicias con los siguientes trabajos en cola: let colaImpresion = ["doc1.pdf", "doc2.png", "doc3.jpg"];
+
+Tareas:
+
+Se imprimió el primer documento. Retíralo de la cola.
+Llega un nuevo trabajo: "doc4.txt". Añádelo al FINAL de la cola.
+Se imprimió el siguiente documento. Retíralo de la cola.
+*/
+
+let colaImpresion = ["doc1.pdf", "doc2.png", "doc3.jpg"];
+
+colaImpresion.shift();
+colaImpresion.push("doc4.txt");
+colaImpresion.shift();
+
+console.log(colaImpresion);
