@@ -42,3 +42,25 @@ tareas.shift();
 tareas.shift();
 
 console.log(tareas)
+
+
+// EJERCICIO 3
+
+/*
+Ejercicio 3: Pila de Historial (LIFO)
+Inicias con el historial: let historial = ["google.com", "youtube.com", "facebook.com"];
+
+Tareas:
+
+Se requiere deshacer la última acción. Elimina el ÚLTIMO elemento del historial.
+Se requiere deshacer la acción anterior. Elimina el ÚLTIMO elemento restante.
+*/
+
+let historial = ["google.com", "youtube.com", "facebook.com"];
+
+historial.pop();
+historial.pop();
+
+console.log(historial)
+
+
