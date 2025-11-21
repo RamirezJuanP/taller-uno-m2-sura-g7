@@ -307,3 +307,63 @@ receta.unshift("Paso 1: Pre-calentar horno")
 receta.push("Paso 4: Servir")
 
 console.log(receta);
+
+
+
+
+
+/*    Ejercicio 14: Invertir y Reemplazar
+
+Inicias con una lista de palabras:
+let palabras = ["uno", "dos", "cuatro"];
+
+
+1.  Invierte el orden del arreglo.
+2.  Te das cuenta de que "cuatro" (ahora en pos 0) es incorrecto. Reemplázalo por "tres" usando splice.
+
+---
+   */
+
+let palabras = ["uno", "dos", "cuatro"];
+
+// Invertir el orden
+
+palabras.reverse()
+
+// Reemplazar cuatro por tres con splice
+
+palabras.splice(0, 1, "Tres")
+
+
+console.log(palabras);
+
+
+
+
+
+
+/*   Ejercicio 15: Equipo de Proyecto
+
+Inicias con un equipo:
+let equipo = ["Ana (Líder)", "Juan (Dev)", "Maria (Diseñadora)"];
+
+
+1.  "Juan (Dev)" (posición 1) renuncia. Elimínalo.
+2.  Se contratan dos nuevos desarrolladores: "Pedro (Dev)" y "Luisa (Dev)". Añádelos al *FINAL*.
+
+---
+ */
+
+
+let equipo = ["Ana (Líder)", "Juan (Dev)", "Maria (Diseñadora)"];
+
+// Eliminar a juan dev
+
+equipo.splice(1, 1)
+
+// Añadir al final a pedro y a luisa
+
+equipo.push("Luisa (Dev)", "Pedro ()Dev")
+
+
+console.log(equipo);
