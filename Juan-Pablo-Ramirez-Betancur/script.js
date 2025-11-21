@@ -367,3 +367,33 @@ equipo.push("Luisa (Dev)", "Pedro ()Dev")
 
 
 console.log(equipo);
+
+
+
+
+/*    Ejercicio 16: Puestos de Estacionamiento
+
+Inicias con el estado de los puestos:
+let parking = ["CarroA", "Libre", "Libre", "CarroB"];
+
+1.  El "CarroA" (posición 0) se va. Elimínalo.
+2.  Llegan dos motos. Ocupan los dos primeros lugares (que ahora son "Libre", "Libre"). Reemplaza esos dos elementos por "MotoA" y "MotoB".
+
+---   */
+
+let parking = ["CarroA", "Libre", "Libre", "CarroB"];
+
+// Eliminar carroA
+
+parking.shift()
+
+// Reemplazar los dos lugares libres por motoA y motoB
+
+parking.fill("MotoA", 0, 1)
+
+parking.fill("MotoB", 1, 2)
+
+console.log(parking);
+
+
+
