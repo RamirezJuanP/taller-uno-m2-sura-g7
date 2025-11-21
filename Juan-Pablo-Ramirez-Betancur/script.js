@@ -150,22 +150,21 @@ console.log(asientos);
 
 
 
-/*  ### Ejercicio 8: Gestión de Asientos de Cine
 
-Inicias con el estado de una fila de asientos:
-let asientos = ["Ocupado", "Libre", "Libre", "Libre", "Ocupado"];
+/*   Ejercicio 8: Reemplazar Elemento
 
-*Tareas:*
-1.  Las tres personas en los asientos "Libre" (posiciones 1, 2 y 3) deben moverse. Cambia esos tres asientos a "Reservado".
-    (Pista: fill puede usar un índice de inicio y fin).
+Inicias con una lista de productos:
+let productos = ["Monitor", "Teclado", "Mouse Roto", "Webcam"];
+
+1.  El "Mouse Roto" (posición 2) debe ser reemplazado. Cámbialo por "Mouse Nuevo" usando splice.
 
 ---
    */
 
-let asientos = ["Ocupado", "Libre", "Libre", "Libre", "Ocupado"];
+let productos = ["Monitor", "Teclado", "Mouse Roto", "Webcam"];
 
-// Cambiar asientos libres a reservados
+// Reemplazar mause roto con uno nuevo (splice)
 
-asientos.fill("Reservado", 1, 4)
+productos.splice(2, 1, "Mouse nuevo")
 
-console.log(asientos);
+console.log(productos);
