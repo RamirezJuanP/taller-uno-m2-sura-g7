@@ -421,3 +421,55 @@ feed.unshift("Alerta de sistemas")
 feed.pop()
 
 console.log(feed);
+
+
+
+
+
+/*     Ejercicio 18: Lista de Invitados VIP
+
+Inicias con una lista de invitados:
+let invitados = ["Carlos", "Beatriz", "David", "Ana"];
+
+
+1.  Ordena la lista alfabéticamente.
+2.  "Beatriz" (ahora en posición 1) cancela. Elimínala.
+
+---   */
+
+let invitados = ["Carlos", "Beatriz", "David", "Ana"];
+
+// Ordenar lista alfabeticamente
+
+invitados.sort()
+
+// Eliminar a Beatriz
+
+invitados.splice(1, 1)
+
+
+console.log(invitados);
+
+
+
+
+
+/*    Ejercicio 19: Tablero de Juego (Fill)
+
+Inicias con un tablero simple:
+let tablero = ["Inicio", null, null, null, null, "Fin"];
+
+
+1.  Rellena todas las casillas nulas (de la 1 a la 4) con el valor "Casilla Vacía".
+
+---   */
+
+let tablero = ["Inicio", null, null, null, null, "Fin"];
+
+// Rellenar todas las null con el valor casilla vacia
+
+tablero.fill("Vacia", 1, 5)
+
+
+console.log(tablero);
+
