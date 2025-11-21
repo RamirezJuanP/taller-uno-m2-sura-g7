@@ -473,3 +473,40 @@ tablero.fill("Vacia", 1, 5)
 
 console.log(tablero);
 
+
+
+
+
+
+/*    Ejercicio 20: Desafío Final (Combinado)
+
+Inicias con una lista de códigos:
+let codigos = ["A-10", "C-30", "B-20", "D-40"];
+
+
+1.  Ordena los códigos alfabéticamente.
+2.  El código "C-30" (ahora en posición 2) está obsoleto. Elimínalo.
+3.  Añade un código de emergencia "X-99" al *INICIO*.
+4.  Invierte el orden de la lista final.    */
+
+
+let codigos = ["A-10", "C-30", "B-20", "D-40"];
+
+// Ordenar alfabeticamente
+
+codigos.sort()
+
+// Eliminar C-30
+
+codigos.splice(2, 1)
+
+
+// Añadir al inicio codigo de emergencia X-99
+
+codigos.unshift("X-99")
+
+// Invertir el orden de la lista final
+
+codigos.reverse()
+
+console.log(codigos);
